@@ -1,0 +1,367 @@
+#modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0, 0.9);
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#modal.hidden{
+    display: none;
+    
+}
+img{
+    max-width: 150px; 
+    max-height: 300px;
+}
+
+nav{
+    background-color: black;
+}
+
+.Home{
+    background-color: black;
+    border-color: black;
+
+}
+.Bonobi{
+    
+    border-bottom-color: #2f3036;
+    border-bottom: 5px;
+   
+}
+.Fumetto{
+    width: 400px;
+    height: 500px;
+    margin-top: 20px;
+    margin-left: 180px;
+    border: black solid 5px;
+    margin-bottom: 1px;
+    
+    
+}
+
+p{
+    font-family: cursive;
+    justify-content: space-between;
+    margin-left: 50px;
+    color:red;
+    font-size:40px;
+    margin-right: 50px;
+    margin-top: 0px;
+
+    
+    border: white  solid 4px;
+    background-color:black;
+
+}
+.Fumetto:hover{
+   transform:  scale(1.1);
+}
+    
+    
+
+
+
+html, body
+{
+    height: 100%;
+    min-height: 100%;
+}
+
+body
+{
+    margin: 0;
+    background-color: red;
+    width: 100%; height: 100%; top: 0; left: 0;
+
+}
+
+
+.tb
+{
+    display: table;
+    width: 100%;
+}
+
+.td
+{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+input, button
+{
+    color: #fff;
+    font-family: cursive;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+    
+}
+.sezBottone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px
+}
+.Aggiungi{
+    color: black;
+    font-family: cursive;
+    font-size: 25px;
+    width: 300px;
+    margin-bottom: 30px;
+    background:red;   
+    border-radius:  20px;
+    border: black solid 3px;
+    
+
+}
+.Aggiungi:hover{
+    background: darkred;
+
+}
+
+
+#cover
+{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 550px;
+    padding: 35px;
+    margin: -83px auto 0 auto;
+    background-color: #c0c0c0;
+    
+    border-radius: 20px;
+    box-shadow: 0 10px 40px white, 0 0 0 20px #ffffffeb;
+}
+
+form
+{
+    height: 96px;
+}
+
+input[type="text"]
+{
+    width: 100%;
+    height: 96px;
+    font-size: 60px;
+    line-height: 1;
+}
+
+input[type="text"]::placeholder
+{
+    color:WHITE;
+}
+
+#s-cover
+{
+    width: 1px;
+    padding-left: 35px;
+}
+
+button
+{
+    position: relative;
+    display: block;
+    width: 84px;
+    height: 96px;
+    cursor: pointer;
+}
+
+#s-circle
+{
+    position: relative;
+    top: -8px;
+    left: 0;
+    width: 43px;
+    height: 43px;
+    margin-top: 0;
+    border-width: 15px;
+    border: 15px solid #fff;
+    background-color: transparent;
+    border-radius: 50%;
+    transition: 0.5s ease all;
+}
+
+button span
+{
+    position: absolute;
+    top: 68px;
+    left: 43px;
+    display: block;
+    width: 45px;
+    height: 15px;
+    background-color: transparent;
+    border-radius: 10px;
+    transform: rotateZ(52deg);
+    transition: 0.5s ease all;
+}
+
+button span:before, button span:after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 45px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    transform: rotateZ(0);
+    transition: 0.5s ease all;
+}
+
+#s-cover:hover #s-circle
+{
+    top: -1px;
+    width: 67px;
+    height: 15px;
+    border-width: 0;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+#s-cover:hover span
+{
+    top: 50%;
+    left: 56px;
+    width: 25px;
+    margin-top: -9px;
+    transform: rotateZ(0);
+}
+
+#s-cover:hover button span:before
+{
+    bottom: 11px;
+    transform: rotateZ(52deg);
+}
+
+#s-cover:hover button span:after
+{
+    bottom: -11px;
+    transform: rotateZ(-52deg);
+}
+.Vediamo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.descrizione{
+    font-size:16px;
+    color:red;
+    border: #fff solid 2px;
+    margin-right: 50px;
+
+}
+.vicino{
+    height: 600px;
+    width: 500px;
+}
+ul {
+    
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    margin-right: -70px;
+    
+    
+}
+
+#menu{
+    display: flex;
+    flex-direction:column;
+}
+li:hover a {
+    background: darkgray;
+}
+
+li:hover ul a {
+    background: darkgray;
+    color: #2f3036;
+    height: 40px;
+    line-height: 40px;
+}
+li {
+    
+    display:inline-block;
+    float:left;
+    margin-right: 1400px;  
+    
+}  
+a {
+    display:block;
+    min-width:130px;
+    height: 50px;
+    line-height: 50px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color:yellow;
+    background: #2f3036;
+    text-decoration: none;
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+    font-family: cursive;
+    
+    font-size:35px;
+    
+    
+
+}
+
+.BottoneSelezione{
+    background-color: red;
+    border:black solid 1px;
+    border-radius: 10px;
+    color:black;
+    padding: 15px 32px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    width: 300px;
+    height: 40px;
+
+   
+    
+    font-size: 16px;
+}
+.sezioneNomi{
+    display: flex;
+    flex-direction: column;
+
+}
+.BottoneSelezione:hover{
+    background-color: darkred;
+
+}
+.sezstampa{
+    border:black solid 3px;
+    border-radius: 10px;
+    background: #2f3036;
+}
+.vedilo{
+    font-family: cursive;
+    justify-content: space-between;
+    margin-left: 100px;
+    color:red;
+    font-size:40px;
+    border: white  solid 4px;
+    background-color:black;
+
+}
+
+
+

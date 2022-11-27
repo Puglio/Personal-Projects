@@ -1,0 +1,146 @@
+body{
+    margin:0;
+    background-color: #ff0000;
+    
+}
+.Home{
+    background-color: black;
+    border-color: black;
+
+}
+#cont{
+    font-family: cursive;
+    color:red;
+    background: black;
+    border:black solid 3px;
+    border-radius: 10px;
+
+}
+
+footer {
+    background-color: black;
+    height: 100px;
+  }
+  .cool{
+      background-color: gray;
+
+  }
+
+section p{
+    display: flex;
+    font-family: cursive;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+.dati{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+ .registrazione{
+    display: flex;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    justify-content: center;
+    align-items: center;   
+   margin-left: 450px;
+    max-width: 600px;
+    border: #2f3036  solid 2px;
+    background-color: silver;
+
+}
+.bottone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left:3px;
+    margin-top:6px;
+}
+
+
+.errore{
+    font-weight: bold;
+    color: red;
+}
+img{
+   max-width: 150px; 
+   max-height: 300px;
+   border-radius: 20%;
+}
+nav{
+    background-color: black;
+}
+.hidden{
+display: none;
+
+
+}
+.inizio{
+    font-size: 40px;
+    border: #2f3036  solid 2px;
+    background-color: silver;
+   margin-left: 400px;
+   margin-right: 400px;
+
+}
+.accesso{
+    border: #2f3036  solid 2px;
+    background-color: silver;
+   margin-left: 400px;
+   margin-right: 400px;
+   
+
+}
+input[type=submit] {
+    
+    background-color: silver;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: black solid 2px;
+    border-radius: 4px;
+    cursor: pointer;
+    max-width: 200px; 
+    margin-top: -5px;
+    
+
+  }
+  .contenitore{
+      border: black solid 5px;
+      margin-right: 600px;
+      margin-left: 600px;
+      border-radius: 20px;
+  }
+  input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: cursive;
+  }
+  input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: cursive;
+  }
+  input[type=submit]:hover {
+      max-width: 200px;
+    background-color: slategray;
+  }
+  
+ 
+
+
