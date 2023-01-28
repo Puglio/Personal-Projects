@@ -1,0 +1,16 @@
+Mongo DB command utilities:
+
+show dbs: shows all databases
+use "db Name": create a db 
+db.collectionName.insert(): insert a JSON object into a collection 
+db.colleciotName.insertMany(): insert multiple JSON object into a collection
+db.colleciotName.find(): shows all object of a collection
+db.collectionName.findOne({"attribute value of an object"}): returns the collection (just one) object corresponding at the attribute value passed as input
+db.collectionName.find({"attribute":{$gt/$gte/$in/$in/$ect:"value"}}): comparison operators --> example with in db.users.find({eta:{$in:["26","36"]}})
+db.collectionName.find({"condition operatore":["array of attribute within its conditions"]}) --> example with and  db.users.find({$and: [{eta:"26"},{nome:"andrea"}]})
+db.collectionName.updateOne(): allows to update an object (just one) --> example db.users.updateOne({nome:"andrea"}, {$set {cognome:"fierobecco"}})
+db.collactionName.updateMany(): allows to update multiple objects 
+db.collactionName.updateMany({"empty filter (takes all documents)"}, {$inc:{eta:"1"}}) --> $inc increments the attribute selected by one
+db.collactionName.updateMany({"attribute":"condition"}, {$set: {"attribute":"modify"}}, {upsert:"ture"}) -->when $upsert is used if the filter matchs an boject then modifies it else creates it
+db.colleciotName.deleteOne({"attribute":"value"})
+db.collectionName.deleteMany({"attribute":"value"})  
